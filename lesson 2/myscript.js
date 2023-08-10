@@ -21,6 +21,8 @@
 //     alert("меньше")
 // }
 
+
+
 // let num = parseInt(prompt("Введите возраст"))
 
 // if (num > 0 && num <= 120){
