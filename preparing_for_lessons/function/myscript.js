@@ -1,4 +1,11 @@
+// Цикл For
+
+
+
+// Функции
+
 // 1. Написать функцию, которая принимает 2 числа и возвращает меньшее из них.
+
 
 // function findSmallerNumber(num1, num2){
 //     if (num1 < num2){
@@ -65,22 +72,103 @@
 // alert(sum)
 
 
-function findChetnieorNeChet(onestNum,LastNum,chet){
-    if (chet === true){
-        document.write(`<h1>Чётные</h1>`)
-        for(onestNum; onestNum < LastNum; onestNum++){
-            if(onestNum % 2 === 0){
-                document.write(`<h2>${onestNum}</h2>`)
-            }
-        }
-    }
-    else{
-        document.write(`<h1>Heчётные</h1>`)
-        for(onestNum; onestNum < LastNum; onestNum++){
-            if(onestNum % 2 !== 0){
-                document.write(`<h2>${onestNum}</h2>`)
-            }
-        }
-    }
-}
-findChetnieorNeChet(1,10,true)
+// function findChetnieorNeChet(onestNum,LastNum,chet){
+//     if (chet === true){
+//         document.write(`<h1>Чётные</h1>`)
+//         for(onestNum; onestNum < LastNum; onestNum++){
+//             if(onestNum % 2 === 0){
+//                 document.write(`<h2>${onestNum}</h2>`)
+//             }
+//         }
+//     }
+//     else{
+//         document.write(`<h1>Heчётные</h1>`)
+//         for(onestNum; onestNum < LastNum; onestNum++){
+//             if(onestNum % 2 !== 0){
+//                 document.write(`<h2>${onestNum}</h2>`)
+//             }
+//         }
+//     }
+// }
+// findChetnieorNeChet(1,10,true)
+
+
+
+// Рекурсия 
+
+// * Во всех заданиях обязательно использовать рекурсию.
+// 1. Написать функцию, которая вычисляет факториал заданного числа.
+
+// function factorial(n) {
+//     if (n === 0 || n === 1) {
+//       return 1;
+//     } else {
+//       return n * factorial(n - 1);
+//     }
+//   }
+  
+//   console.log(factorial(5));
+
+
+// 2. Написать функцию, которая выводит все числа из заданного
+// пользователем диапазона в прямом порядке. И еще одну
+// функцию – для вывода в обратном порядке.
+
+// function printNumbersForward(start, end) {
+//     if (start <= end) {
+//       console.log(start);
+//       printNumbersForward(start + 1, end);
+//     }
+//   }
+  
+//   function printNumbersBackward(start, end) {
+//     if (end >= start) {
+//       console.log(end);
+//       printNumbersBackward(start, end - 1);
+//     }
+//   }
+
+// 3. Написать функцию, которая выводит переданное ей число
+// задом наперед.
+// Например: число 1234 вывести как 4321.
+
+// function reverseNumber(number) {
+//     if (number < 10) {
+//       return String(number);
+//     } else {
+//       const lastDigit = number % 10;
+//       const remainingDigits = Math.floor(number / 10);
+//       return String(lastDigit) + reverseNumber(remainingDigits);
+//     }
+//   }
+  
+//   console.log(reverseNumber(1234)); // Выводит "4321"
+
+// 4. Написать функцию, которая считает сумму цифр числа.
+// Например: число 1357, сумма 1 + 3 + 5 + 7 = 16.
+
+// function sumOfDigits(number) {
+//     if (number < 10) {
+//       return number;
+//     } else {
+//       const lastDigit = number % 10;
+//       const remainingDigits = Math.floor(number / 10);
+//       return lastDigit + sumOfDigits(remainingDigits);
+//     }
+//   }
+  
+//   console.log(sumOfDigits(1357)); // Выводит 16
+
+// 5. Написать функцию, которая принимает число и выводит
+// соответствующее количество вложенных пар круглых скобок.
+// Например: число 4 – (((()))). напиши используя JS
+
+// function generateParentheses(n) {
+//     if (n === 0) {
+//       return "";
+//     } else {
+//       return "(" + generateParentheses(n - 1) + ")";
+//     }
+//   }
+  
+//   console.log(generateParentheses(4)); // Выводит "(((()))"
