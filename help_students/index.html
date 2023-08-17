@@ -7,8 +7,34 @@
 </head>
 <body>
     <script>
-        let num = prompt('Введите пятизначное число: ')
+        let sum = parseInt(prompt("Колличество денег в рублях"))
+        // let val = prompt('Введите валюту: ')
+        // switch(val){
+        //     case "EUR":
+        //         document.write(`${sum} рублей = ${sum / 103}`)
+        //         break;
+        //     case "US":
+        //         document.write(`${sum} рублей = ${sum / 93}`)
+        //         break;    
+        //     default:
+        //         document.write(`я не знаю что это - ${val}`)
+        // }
         
+        let check = confirm("Доллар?")
+        if(check){
+            document.write(`${sum} рублей = ${sum / 93}`)
+        }
+        else{
+            check = confirm("EURO?")
+            if(check){
+                document.write(`${sum} рублей = ${sum / 103}`)
+            }
+            else{
+                document.write(`больше валют я не знаю`)
+            }
+        }
+
+
     </script>
 </body>
 </html>
