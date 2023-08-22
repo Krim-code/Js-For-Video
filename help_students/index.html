@@ -4,37 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .container{
+            display: flex;
+            gap: 10px;
+            font-size: 50px;
+        }
+        .container :first-child{
+            font-size: 100px;
+            color: brown;
+        }
+        .container :last-child{
+            font-size: 100px;
+            color:green;
+        }
+    </style>
 </head>
+
 <body>
-    <script>
-        let sum = parseInt(prompt("Колличество денег в рублях"))
-        // let val = prompt('Введите валюту: ')
-        // switch(val){
-        //     case "EUR":
-        //         document.write(`${sum} рублей = ${sum / 103}`)
-        //         break;
-        //     case "US":
-        //         document.write(`${sum} рублей = ${sum / 93}`)
-        //         break;    
-        //     default:
-        //         document.write(`я не знаю что это - ${val}`)
-        // }
+    <div class="container">
+        <i class="fa fa-caret-square-o-down"></i>
+        <i class="fa fa-caret-square-o-down"></i>
+        <i class="fa fa-caret-square-o-down"></i>
+        <i class="fa fa-caret-square-o-down"></i>
+        <i class="fa fa-caret-square-o-down"></i>
+        <i class="fa fa-caret-square-o-down"></i>
         
-        let check = confirm("Доллар?")
-        if(check){
-            document.write(`${sum} рублей = ${sum / 93}`)
-        }
-        else{
-            check = confirm("EURO?")
-            if(check){
-                document.write(`${sum} рублей = ${sum / 103}`)
-            }
-            else{
-                document.write(`больше валют я не знаю`)
-            }
-        }
-
-
-    </script>
+    </div>
+    
 </body>
 </html>
