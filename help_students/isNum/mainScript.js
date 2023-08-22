@@ -1,0 +1,1 @@
+console.log(isNum(1,2));
