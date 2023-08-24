@@ -21,17 +21,15 @@
         }
     </style>
 </head>
-
 <body>
-    <div class="container">
-        <i class="fa fa-caret-square-o-down"></i>
-        <i class="fa fa-caret-square-o-down"></i>
-        <i class="fa fa-caret-square-o-down"></i>
-        <i class="fa fa-caret-square-o-down"></i>
-        <i class="fa fa-caret-square-o-down"></i>
-        <i class="fa fa-caret-square-o-down"></i>
-        
-    </div>
-    
+    <script>
+            const start = parseInt(prompt("Start - "))
+            const end = parseInt(prompt("End - "))
+            let sum = 0
+            for(let i = start; i <= end; i++){
+                sum+=i
+            }
+            alert(sum)
+    </script>
 </body>
 </html>
