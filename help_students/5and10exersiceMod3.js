@@ -72,3 +72,6 @@ if (nextDay > 28) {
 
 // Выводим следующую дату
 console.log("Следующая дата: " + nextDay + "." + nextMonth + "." + nextYear);
+
+
+
