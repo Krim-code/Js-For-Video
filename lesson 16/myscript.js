@@ -8,4 +8,4 @@ function hello() {
 }
 
 btn.addEventListener("click",hello)
-console.log(greet.style)
+console.log(greet.style----)

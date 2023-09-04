@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Список новостей</title>
+	<script>
+		// Функция для удаления новости по нажатию на кнопку
+		function deleteNews(event) {
+			// получаем ссылку на элемент кнопки
+			var button = event.target;
+			// получаем ссылку на родительский элемент кнопки - элемент новости
+			var newsItem = button.parentNode;
+			// удаляем элемент новости
+			newsItem.parentNode.removeChild(newsItem);
+		}
+	</script>
+    <style>
+		/* Стили для списка новостей */
+		ul {
+			padding: 0;
+			margin: 0;
+			list-style: none;
+		}
+		li {
+            align-items: flex-start;
+            justify-content: space-between;
+            display: flex;
+			padding: 10px;
+			margin: 10px 0;
+			background-color: #f1f1f1;
+			border-radius: 5px;
+		}
+		h2 {
+			margin: 0;
+			font-size: 24px;
+			font-weight: bold;
+		}
+		p {
+			margin: 10px 0 0;
+			font-size: 16px;
+		}
+
+		/* Стили для кнопок удаления */
+		button {
+			background-color: #f44336;
+			color: #ffffff;
+			padding: 8px 16px;
+			border: none;
+			border-radius: 5px;
+			font-size: 16px;
+			cursor: pointer;
+            
+		}
+		button:hover {
+			background-color: #d80000;
+		}
+	</style>
+</head>
+<body>
+	<h1>Список новостей</h1>
+	<ul>
+		<li>
+            <div><h2>Заголовок новости 1</h2>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ea quod numquam. Maxime dolor sunt ex velit? Voluptatem quod ab, esse nesciunt ipsum illum quos enim repudiandae soluta asperiores vitae.</p></div>
+			
+			<button onclick="deleteNews(event)">Удалить</button>
+		</li>
+		<li>
+			<div><h2>Заголовок новости 2</h2>
+                <p>Текст новости 2</p></div>
+			<button onclick="deleteNews(event)">Удалить</button>
+		</li>
+		<li>
+			<div>
+                <h2>Заголовок новости 3</h2>
+                <p>Текст новости 3</p>
+            </div>
+			<button onclick="deleteNews(event)">Удалить</button>
+		</li>
+	</ul>
+</body>
+</html>

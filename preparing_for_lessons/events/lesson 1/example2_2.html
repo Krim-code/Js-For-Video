@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        margin: 0;
+        position: relative;
+        height: 2000px;
+    }
+    #stranger{
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        background-color: brown;
+    }
+</style>
+<body>
+    <div id="stranger">
+
+    </div>
+    <script>
+
+document.body.addEventListener('mousemove', function (event){
+    console.log(stranger.style)
+    stranger.style.left = event.pageX -50 + 'px';
+    stranger.style.top = event.pageY  -50+ 'px';
+})
+    </script>
+    
+</body>
+</html>

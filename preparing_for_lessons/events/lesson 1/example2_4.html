@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="Hide()">Hide/Show</button>
+    <p id="textHide">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel blanditiis sed sit omnis, magnam nemo aperiam, aliquam possimus debitis reprehenderit, nulla officiis eaque. Quos odio porro autem doloremque facilis minima.
+    </p>
+    <script>
+        function Hide(){
+            if (textHide.style.display != 'none') {
+                textHide.style.display = "none"
+            }
+            else{
+                textHide.style.display = "block"
+            }
+        }
+    </script>
+</body>
+</html>
