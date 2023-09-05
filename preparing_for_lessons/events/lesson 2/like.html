@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 2000px;
+        }
+        .btn {
+            border-radius: 20px;
+  border: none; /* Remove borders */
+  color: white; /* Add a text color */
+  padding: 14px 28px; /* Add some padding */
+  cursor: pointer; /* Add a pointer cursor on mouse-over */
+}
+.info {background-color: #2196F3;} /* Blue */
+.info:hover {background: #0b7dda;}
+    </style>
+</head>
+<body>
+    <button id="likes" class="btn info">0 likes</button>
+    <script>
+        countOfLikes = 0
+        likes.addEventListener("click", function(){
+            countOfLikes = parseInt(likes.innerHTML)
+            likes.innerHTML = countOfLikes + 1 + " likes"
+        })
+        
+        document.body.onmousedown = function(event){
+            console.log("likesS")
+            event.preventDefault()
+            switch(event.wich){
+                case 2:
+                return false;
+
+                    break;
+                case 3:
+                    break;
+            }
+
+        }
+        document.oncontextmenu=function(e){return false};
+
+    </script>
+</body>
+</html>
