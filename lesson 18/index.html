@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            border-collapse: collapse;
+            width: 100%;
+        }
+        td,th{
+            border: 2px solid #dddd;
+            text-align: center;
+            padding: 8px;
+            
+        }
+        th{
+            background-color: aquamarine;
+        }
+        td{
+            background-color: bisque;
+        }
+    </style>
+</head>
+<body>
+    <script src="myscript.js"></script>
+
+    <table id="tbh">
+        <tr>
+            <th>1</th>
+            <th>2</th>
+            <th>3</th>
+        </tr>
+        <tr>
+            <td>test</td>
+            <td>test</td>
+            <td>test</td>
+        </tr>
+        <tr>
+            <td>test</td>
+            <td>test</td>
+            <td>test</td>
+        </tr>
+        <tr>
+            <td>test</td>
+            <td>test</td>
+            <td>test</td>
+        </tr>
+    </table>
+   
+    <textarea id="text" cols="30" rows="10"></textarea>
+    <a href="www.google.com">ссылка</a>
+    <script>
+        window.addEventListener("beforeunload", function(e){
+            if(text.value.length > 0){
+                let msg = "Text not saved"
+                e.returnValue =  msg
+                return msg
+            }
+            return null
+        })
+    </script>
+    <!-- <img src="https://static.vecteezy.com/system/resources/previews/009/273/280/non_2x/concept-of-loneliness-and-disappointment-in-love-sad-man-sitting-element-of-the-picture-is-decorated-by-nasa-free-photo.jpg" 
+         alt=""
+         onload="alert(`Success`)"
+         onerror="alert(`Error`)" >
+
+    <img src="https://static.vecteezy.com/sysgiyhgiuhiuhtem/resources/previews/009/273/280/non_2x/concept-of-loneliness-and-disappointment-in-love-sad-man-sitting-element-of-the-picture-is-decorated-by-nasa-free-photo.jpg" 
+         alt=""
+         onload="alert(`Success`)"
+         onerror="alert(`Error`)" > -->
+
+</body>
+</html>
