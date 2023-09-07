@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        li{
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            padding: 10px;
+            margin: 10px 0;
+            background-color: #f1f1f1;
+            border-radius: 5px;
+        }
+        h2{
+            margin: 0;
+        }
+        p{
+            margin: 10px 0 0;
+        }
+        button{
+            background-color: #f44336;
+            padding: 8px 16px;
+            border: none;
+            color: #f1f1f1;
+            cursor: pointer;
+        }
+        button:hover{
+            background-color: #d80000;
+        }
+    </style>
+</head>
+<body>
+    <h1>Список новостей</h1>
+    <ul>
+        <li>
+            <div>
+                <h2>Заголовок</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut voluptas quasi assumenda, fugiat sint impedit facere eligendi. In praesentium, accusamus beatae delectus eum ea, ipsam asperiores excepturi, fugit animi nihil.</p>
+            </div>
+            <button onclick="deleteNews(event)">Удалить</button>
+        </li>
+
+        <li>
+            <div>
+                <h2>Заголовок 2</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut voluptas quasi assumenda, fugiat sint impedit facere eligendi. In praesentium, accusamus beatae delectus eum ea, ipsam asperiores excepturi, fugit animi nihil.</p>
+            </div>
+            <button onclick="deleteNews(event)">Удалить</button>
+        </li>
+
+        <li>
+            <div>
+                <h2>Заголовок 3</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut voluptas quasi assumenda, fugiat sint impedit facere eligendi. In praesentium, accusamus beatae delectus eum ea, ipsam asperiores excepturi, fugit animi nihil.</p>
+            </div>
+            <button onclick="deleteNews(event)">Удалить</button>
+        </li>
+    </ul>
+    <script>
+        function deleteNews(event) {
+            let button = event.target
+            let newsElem = button.parentNode
+            newsElem.parentNode.removeChild(newsElem)
+        }
+    </script>    
+</body>
+</html>
