@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 4</title>
+</head>
+
+<body>
+
+    <iframe src="https://itstep.org" name="frame1"></iframe>
+        <iframe src="https://itstep.org" name="frame2"></iframe>
+    
+    <button onclick="window.frames['frame1'].history.back()">Назад (Frame 1)</button>
+    <button onclick="window.frames['frame1'].history.forward()">Вперед (Frame 1)</button>
+    <button onclick="window.frames['frame2'].history.back()">Назад (Frame 2)</button>
+    <button onclick="window.frames['frame2'].history.forward()">Вперед (Frame 2)</button>
+</body>
+</html>

@@ -1,0 +1,19 @@
+!<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 3</title>
+    <script>
+        function countHistoryEntries() {
+            const historyCount = window.history.length;
+            alert(`Количество записей в истории браузера: ${historyCount}`);
+        }
+    </script>
+</head>
+<body>
+    <button onclick="countHistoryEntries()">Показать количество записей в истории</button>
+    <button onclick="history.back()"><</button>
+    <button onclick="history.forward()">></button>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Управление окнами</title>
+    <script>
+        let newWin;
+        function openWindow() {
+            newWin = window.open("https://itstep.org", "", "width=640, height=480");
+        }
+
+        function closeWindow() {
+            newWin.close();
+        }
+    </script>
+</head>
+<body>
+    <button onclick="openWindow()">Открыть окно</button>
+    <button onclick="closeWindow()">Закрыть окно</button>
+</body>
+</html>
