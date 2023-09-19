@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>User Information Form</title>
+  </head>
+  <body>
+    <h2>User Information Form</h2>
+    <form>
+      <label for="firstname">Firstname:</label>
+      <input type="text" id="firstname" name="firstname"><br><br>
+      
+      <label for="lastname">Lastname:</label>
+      <input type="text" id="lastname" name="lastname"><br><br>
+      
+      <label for="birthday">Birthday:</label>
+      <input type="date" id="birthday" name="birthday"><br><br>
+      
+      <label for="gender">Gender:</label>
+      <select id="gender" name="gender">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select><br><br>
+      
+      <label for="country">Country:</label>
+      <input type="text" id="country" name="country"><br><br>
+      
+      <label for="city">City:</label>
+      <input type="text" id="city" name="city"><br><br>
+      
+      <label for="skills">Skills:</label><br>
+      <input type="checkbox" id="html" name="skills" value="html">
+      <label for="html"> HTML</label><br>
+      <input type="checkbox" id="css" name="skills" value="css">
+      <label for="css"> CSS</label><br>
+      <input type="checkbox" id="javascript" name="skills" value="javascript">
+      <label for="javascript"> JavaScript</label><br><br>
+      
+      <input type="submit" value="Submit">
+    </form><br>
+    
+    <h2>User Information Table</h2>
+    <table>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Birthday</th>
+        <th>Gender</th>
+        <th>Country</th>
+        <th>City</th>
+        <th>Skills</th>
+      </tr>
+      <tr>
+        <td id="fname"></td>
+        <td id="lname"></td>
+        <td id="bday"></td>
+        <td id="gend"></td>
+        <td id="count"></td>
+        <td id="cit"></td>
+        <td id="skill"></td>
+      </tr>
+    </table>
+    
+    <script>
+      const form = document.querySelector('form');
+      const fname = document.getElementById('fname');
+      const lname = document.getElementById('lname');
+      const bday = document.getElementById('bday');
+      const gend = document.getElementById('gend');
+      const count = document.getElementById('count');
+      const cit = document.getElementById('cit');
+      const skill = document.getElementById('skill');
+      
+      form.addEventListener('submit', (event) => {
+        event.preventDefault();
+        
+        fname.innerText = form.firstname.value;
+        lname.innerText = form.lastname.value;
+        bday.innerText = form.birthday.value;
+        gend.innerText = form.gender.value;
+        count.innerText = form.country.value;
+        cit.innerText = form.city.value;
+        
+        let skills = '';
+        if (form.skills.checked) {
+          skills += form.skills.value + ' ';
+        }
+        skill.innerText = skills;
+      });
+    </script>
+  </body>
+</html>

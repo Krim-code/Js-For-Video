@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Палитра цветов</title>
+	<script src="script.js"></script>
+	<style>
+		.color-box {
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			margin: 5px;
+			border: 1px solid black;
+			box-shadow: 2px 2px #888888;
+		}
+		.color-form {
+			margin-top: 10px;
+		}
+	</style>
+</head>
+<body>
+	<h1>Палитра цветов</h1>
+
+	<div id="color-container">
+		<!-- Контейнер для цветов, сюда будут добавляться новые цвета -->
+	</div>
+
+	<form class="color-form">
+		<label for="color-input">Добавить новый цвет: </label>
+		<input type="color" id="color-input" name="color">
+		<button type="button" onclick="addColor()">Добавить</button>
+	</form>
+    <script>
+        function addColor() {
+	// Получаем значение выбранного цвета
+	var newColor = document.getElementById("color-input").value;
+
+	// Создаем новый блок для цвета
+	var colorBox = document.createElement("div");
+	colorBox.className = "color-box";
+	colorBox.style.backgroundColor = newColor;
+
+	// Добавляем новый блок в контейнер цветов
+	var colorContainer = document.getElementById("color-container");
+	colorContainer.appendChild(colorBox);
+}
+    </script>
+</body>
+</html>
